@@ -1,0 +1,26 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    background-color: #000;
+}
+
+.solar-system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.solar-system img{
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+
+.sun img{
+    width: 40px;
+    height: 40px;
+}
