@@ -1,0 +1,94 @@
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: black;
+}
+
+.solar-system {
+  position: relative;
+  width: 800px;
+  height: 800px;
+}
+
+.solar-system img {
+  width: 40px;
+  height: 40px;
+}
+
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sun img {
+  width: 80px;
+  height: 80px;
+}
+
+.mercury {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 60px);
+    transform: translateY(-50%);
+}
+
+.venus {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 120px);
+    transform: translateY(-50%);
+}
+
+.earth {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 180px);
+    transform: translateY(-50%);
+}
+
+.mars {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 240px);
+    transform: translateY(-50%);
+}
+
+.jupiter {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 300px);
+    transform: translateY(-50%);
+}
+
+.saturn {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 360px);
+    transform: translateY(-50%);
+}
+
+.uranus {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 420px);
+    transform: translateY(-50%);
+}
+
+.neptune {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 480px);
+    transform: translateY(-50%);
+}
+
+.pluto {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 540px);
+    transform: translateY(-50%);
+}
