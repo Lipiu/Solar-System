@@ -1,13 +1,17 @@
 body, html {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   margin: 0;
   background: black;
 }
 
 .info-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10; 
     background: none;
 }
 
@@ -55,69 +59,107 @@ button:hover {
 }
 
 .sun img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 .mercury {
     position: absolute;
     top: 50%;
-    left: calc(50% + 60px);
+    left: calc(50% + 50px);
     transform: translateY(-50%);
 }
 
 .venus {
     position: absolute;
     top: 50%;
-    left: calc(50% + 120px);
+    left: calc(50% + 110px);
     transform: translateY(-50%);
 }
 
 .earth {
     position: absolute;
     top: 50%;
-    left: calc(50% + 180px);
+    left: calc(50% + 160px);
     transform: translateY(-50%);
 }
 
 .mars {
     position: absolute;
     top: 50%;
-    left: calc(50% + 240px);
+    left: calc(50% + 220px);
     transform: translateY(-50%);
 }
 
 .jupiter {
     position: absolute;
     top: 50%;
-    left: calc(50% + 300px);
+    left: calc(50% + 280px);
     transform: translateY(-50%);
 }
 
 .saturn {
     position: absolute;
     top: 50%;
-    left: calc(50% + 360px);
+    left: calc(50% + 340px);
     transform: translateY(-50%);
 }
 
 .uranus {
     position: absolute;
     top: 50%;
-    left: calc(50% + 420px);
+    left: calc(50% + 400px);
     transform: translateY(-50%);
 }
 
 .neptune {
     position: absolute;
     top: 50%;
-    left: calc(50% + 480px);
+    left: calc(50% + 460px);
     transform: translateY(-50%);
 }
 
 .pluto {
     position: absolute;
     top: 50%;
-    left: calc(50% + 540px);
+    left: calc(50% + 520px);
     transform: translateY(-50%);
 }
+
+.mercury-orbit, .venus-orbit, .earth-orbit, .mars-orbit,
+.jupiter-orbit, .saturn-orbit, .uranus-orbit, .neptune-orbit, .pluto-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+}
+
+.mercury-orbit::before,
+.venus-orbit::before,
+.earth-orbit::before,
+.mars-orbit::before,
+.jupiter-orbit::before,
+.saturn-orbit::before,
+.uranus-orbit::before,
+.neptune-orbit::before,
+.pluto-orbit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.mercury-orbit::before { width: 140px; height: 140px; }
+.venus-orbit::before   { width: 260px; height: 260px; }
+.earth-orbit::before   { width: 360px; height: 360px; }
+.mars-orbit::before    { width: 480px; height: 480px; }
+.jupiter-orbit::before { width: 600px; height: 600px; }
+.saturn-orbit::before  { width: 720px; height: 720px; }
+.uranus-orbit::before  { width: 840px; height: 840px; }
+.neptune-orbit::before { width: 960px; height: 960px; }
+.pluto-orbit::before   { width: 1080px; height: 1080px; }
+
+
