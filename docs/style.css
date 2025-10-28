@@ -163,3 +163,49 @@ button:hover {
 .pluto-orbit::before   { width: 1080px; height: 1080px; }
 
 
+.mercury-orbit {
+    animation: orbit 4s linear infinite;
+}
+
+.venus-orbit {
+    animation: orbit 8s linear infinite;
+}
+
+.earth-orbit {
+    animation: orbit 12s linear infinite;
+}
+
+.mars-orbit {
+    animation: orbit 16s linear infinite;
+}
+
+.jupiter-orbit {
+    animation: orbit 20s linear infinite;
+}
+
+.saturn-orbit {
+    animation: orbit 24s linear infinite;
+}
+
+.uranus-orbit {
+    animation: orbit 28s linear infinite;
+}
+
+.neptune-orbit {
+    animation: orbit 32s linear infinite;
+}
+
+.pluto-orbit {
+    animation: orbit 36s linear infinite;
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
