@@ -209,6 +209,7 @@ button:hover {
 }
 
 
+
 @media(max-width: 1200px){
     .solar-system{
         transform: scale(0.8);
@@ -226,4 +227,3 @@ button:hover {
         transform: scale(0.4);
     }
 }
-
