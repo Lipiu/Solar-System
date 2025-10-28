@@ -1,0 +1,78 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+body {
+  background:
+    radial-gradient(1200px 800px at 20% 100%, #4b2bbd 0%, rgba(75,43,189,0.4) 35%, transparent 60%),
+    radial-gradient(1000px 700px at 80% 0%, #7a2eb8 0%, rgba(122,46,184,0.3) 35%, transparent 60%),
+    linear-gradient(180deg, #0b0820 0%, #060414 100%);
+}
+
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; 
+  background: transparent;
+  display: block;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(120% 120% at 50% 50%, transparent 60%, rgba(0,0,0,0.5) 100%);
+}
+
+h1, p, a {
+  text-shadow: 0 0 12px rgba(128, 90, 213, 0.2);
+}
+
+main, header {
+  position: relative;
+  z-index: 10;
+}
+
+.planet-card {
+  border-radius: 14px;
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+}
+
+.planet-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.25);
+  border-color: rgba(186, 104, 255, 0.6);
+}
+
+.planet-img {
+  width: 110px;
+  height: auto;
+  filter: drop-shadow(0 0 12px rgba(180, 120, 255, 0.35));
+}
+
+.planet-name {
+  color: white;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(128, 90, 213, 0.2);
+}
+
+.planet-text {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
