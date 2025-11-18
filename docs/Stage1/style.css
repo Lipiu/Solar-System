@@ -40,6 +40,16 @@ button:hover {
     0 4px 8px 0 rgba(49,46,129,0.5);
 }
 
+#starCanvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: block;
+}
+
 .solar-system {
   position: relative;
   width: 800px;
