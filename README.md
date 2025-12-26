@@ -9,7 +9,7 @@
     * Pause
     * Mute
 
-**Members:** Rosu Liviu, Suto Mara\
+**Members:** Rosu Liviu, [Suto Mara](https://github.com/sutomara)\
 **Group:** 1107
 
 **Technologies used:**
